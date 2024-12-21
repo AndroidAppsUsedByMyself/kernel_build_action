@@ -35,7 +35,7 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ccache: true
+          ccache: false
           ksu-url: http://github.com/rifsxd/KernelSU-Next
           ksu-version: next
           ksu: true
