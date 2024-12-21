@@ -28,16 +28,18 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/AndroidAppsUsedByMyself/android_kernel_motorola_sm8250
+          kernel-branch: lineage-22.0
+          config: lineageos_pstar_stock_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
+          ccache: true
+          ksu-url: http://github.com/rifsxd/KernelSU-Next
+          ksu-version: next
           ksu: true
-          ksu-version: main
+          ksu-lkm: true
           android-version: 12
-          aosp-clang-version: r383902
+          aosp-clang-version: r416183b1
           disable-lto: true
           anykernel3: true
