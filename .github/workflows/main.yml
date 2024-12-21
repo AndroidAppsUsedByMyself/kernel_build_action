@@ -31,7 +31,7 @@ jobs:
           kernel-url: https://github.com/AndroidAppsUsedByMyself/android_kernel_motorola_sm8250
           kernel-branch: lineage-22.0
           config: lineageos_pstar_stock_defconfig
-          extra-cmd: LOCALVERSION=-kernelsu-lxc
+          extra-cmd: LOCALVERSION=-kernelsu
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
@@ -40,8 +40,6 @@ jobs:
           ksu-version: next
           ksu: true
           ksu-lkm: true
-          lxc: true
-          lxc-patch: true
           android-version: 12
           aosp-clang-version: r416183b1
           disable-lto: true
