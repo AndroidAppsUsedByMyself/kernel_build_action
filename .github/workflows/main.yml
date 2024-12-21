@@ -31,6 +31,7 @@ jobs:
           kernel-url: https://github.com/AndroidAppsUsedByMyself/android_kernel_motorola_sm8250
           kernel-branch: lineage-22.0
           config: lineageos_pstar_stock_defconfig
+          extra-cmd: LOCALVERSION=-kernelsu
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
